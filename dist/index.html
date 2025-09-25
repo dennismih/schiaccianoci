@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎄</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Galleria Schiaccianoci - Condividi i tuoi selfie natalizi con il nostro schiaccianoci gigante!" />
+    <meta name="keywords" content="schiaccianoci, natale, selfie, galleria, scuola" />
+    <title>Galleria Schiaccianoci 🎄 | Selfie Natalizi</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Galleria Schiaccianoci 🎄" />
+    <meta property="og:description" content="Condividi i tuoi selfie natalizi con il nostro schiaccianoci gigante!" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Prevent caching for dynamic content -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
+    <!-- Security headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data:;" />
+    
+    <!-- Prevent screenshots (mobile) -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <script type="module" crossorigin src="/schiaccianoci/assets/index-CCMMRDsP.js"></script>
+    <link rel="stylesheet" crossorigin href="/schiaccianoci/assets/index-Bqf6rhbF.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <script>
+      // Anti-screenshot measures
+      document.addEventListener('DOMContentLoaded', () => {
+        // Prevent F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'F12' || 
+              (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
+              (e.ctrlKey && e.key === 'U')) {
+            e.preventDefault();
+            return false;
+          }
+        });
+        
+        // Prevent right-click
+        document.addEventListener('contextmenu', (e) => {
+          e.preventDefault();
+          return false;
+        });
+        
+        // Prevent drag and drop of images
+        document.addEventListener('dragstart', (e) => {
+          if (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO') {
+            e.preventDefault();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
